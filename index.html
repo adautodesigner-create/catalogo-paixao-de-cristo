@@ -51,7 +51,7 @@ footer{color:var(--muted);font-size:11px;padding:18px 2px}.hidden{display:none!i
 const SUPABASE_URL='https://fvwfvvhklnaozbfewyid.supabase.co';
 const SUPABASE_KEY='sb_publishable_XuLoKAwUaEd3nxw7LnpnDA_VbhW8pMo';
 const sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
-let items=[],isAdmin=false,currentUser=null,imageValue='',view='gallery';
+let items=[],isAdmin=false,isOwner=false,currentRole=null,currentUser=null,imageValue='',view='gallery';
 const $=id=>document.getElementById(id);
 const categories=['Baixo Custo','Médio Custo','Alto Custo'];
 function esc(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
